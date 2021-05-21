@@ -1,6 +1,5 @@
 .content {
   grid-area: c;
-  background-color: cornflowerblue;
   border-radius: 10px;
   box-shadow: #cdc2c2 0px 0px 5px 2px;
   background-color: #1e1f26;
@@ -12,6 +11,6 @@
   padding: 10px;
 }
 
-.content img {
+.content>img {
   width: 100%;
 }

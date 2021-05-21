@@ -1,0 +1,9 @@
+.item {
+  color: #cdc2c2;
+}
+
+.item>img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
