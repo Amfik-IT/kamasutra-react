@@ -7,3 +7,10 @@
   height: auto;
   border-radius: 50%;
 }
+.likeCount {
+  color: #cdc2c2;
+}
+
+.icon {
+  color: red;
+}
