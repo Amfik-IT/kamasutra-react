@@ -1,8 +1,9 @@
 import React from 'react';
+import s from './Profile.module.css';
 
 const Profile = () => {
     return (
-      <div className="content">
+      <div className={s.content}>
       <div>
         <img src="https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg"></img>
       </div>
@@ -15,10 +16,10 @@ const Profile = () => {
           New post
         </div>
       </div>
-      <div>
-        <div>Post 1</div>
-        <div>Post 2</div>
-        <div>Post 3</div>
+      <div className={s.posts}>
+        <div className={s.item}>Post 1</div>
+        <div className={s.item}>Post 2</div>
+        <div className={s.item}>Post 3</div>
       </div>
     </div>
     );

@@ -1,0 +1,31 @@
+.nav {
+  border-radius: 10px;
+  grid-area: n;
+  background-color: #1e1f26;
+  padding: 10px;
+  box-shadow: #cdc2c2 0px 0px 5px 2px;
+  overflow: hidden;
+}
+
+.nav div {
+  margin: 10px 0px;
+  padding-right: 10px;
+}
+
+.nav div a {
+  color: #cdc2c2;
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0px 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav div a:hover {
+  background-color: #000;
+}
+
+.item.active {
+  border: solid 1px #983c4c;
+  border-radius: 5px;
+}
