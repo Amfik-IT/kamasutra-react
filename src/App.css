@@ -21,3 +21,12 @@ body {
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
+
+.app-wrapper-content {
+  grid-area: c;
+  border-radius: 10px;
+  box-shadow: #cdc2c2 0px 0px 5px 2px;
+  background-color: #1e1f26;
+  /* color: #cdc2c2; */
+  overflow: hidden;
+}
