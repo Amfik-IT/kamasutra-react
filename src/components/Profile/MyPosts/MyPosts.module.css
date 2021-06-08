@@ -1,3 +1,12 @@
+.postBlock {
+    padding: 10px;
+}
+
+.postBlock h3 {
+    color: #cdc2c2;
+}
+
 .posts {
     transform: translate(0);
+    margin-top: 10px;
 }
