@@ -8,7 +8,6 @@
 .me {
     text-align: right;
     padding-right: 50px;
-    /*padding-left: 50px;*/
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
@@ -37,7 +36,6 @@
 }
 
 .me .ava {
-    float: right;
     margin-left: 10px;
 }
 
@@ -46,7 +44,6 @@
 }
 
 .collocutor .ava {
-    float: left;
     margin-right: 10px;
 }
 
