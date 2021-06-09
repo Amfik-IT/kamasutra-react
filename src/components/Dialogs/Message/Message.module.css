@@ -1,0 +1,55 @@
+.message {
+    margin: 10px 0;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    color: #0cb3b3;
+}
+
+.me {
+    text-align: right;
+    padding-right: 50px;
+    /*padding-left: 50px;*/
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.collocutor {
+    text-align: left;
+    padding: 0 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.ava {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.ava img {
+    width: 100%;
+    height: auto;
+}
+
+.me .ava {
+    float: right;
+    margin-left: 10px;
+}
+
+.me .text {
+    width: 50%;
+}
+
+.collocutor .ava {
+    float: left;
+    margin-right: 10px;
+}
+
+.collocutor .text {
+    width: 50%;
+}

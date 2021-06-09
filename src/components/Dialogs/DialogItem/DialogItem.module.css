@@ -1,0 +1,39 @@
+.dialog {
+    margin: 10px 0;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.dialog a{
+    color: #cdc2c2;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dialog:hover {
+    background-color: #000;
+}
+
+.ava {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.ava img {
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    border: solid 1px #983c4c;
+}

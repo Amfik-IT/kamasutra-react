@@ -7,22 +7,30 @@ let state = {
     },
     dialogsPage: {
         dialogs: [
-            {id: 1, name: "Vova"},
-            {id: 2, name: "Dimych"},
-            {id: 3, name: "Slava"},
-            {id: 4, name: "Ilia"},
-            {id: 5, name: "Andrey"},
-            {id: 6, name: "Sasha"},
+            {id: 1, name: "Vova", avatar: 'https://bit.ly/3waIwov'},
+            {id: 2, name: "Dimych", avatar: 'https://bit.ly/3waIwov'},
+            {id: 3, name: "Slava", avatar: 'https://bit.ly/3waIwov'},
+            {id: 4, name: "Ilia", avatar: 'https://bit.ly/3waIwov'},
+            {id: 5, name: "Andrey", avatar: 'https://bit.ly/3waIwov'},
+            {id: 6, name: "Sasha", avatar: 'https://bit.ly/3waIwov'},
         ],
         messages: [
-            {id: 1, message: "Hi"},
-            {id: 2, message: "How is your it-kamasutra"},
-            {id: 3, message: "Yo"},
-            {id: 4, message: "Yo"},
-            {id: 5, message: "Yo"},
+            {id: 1, message: "Hi!", avatar: 'https://bit.ly/3waIwov', author: 'me'},
+            {id: 2, message: "How is your it-kamasutra?", avatar: 'https://bit.ly/3waIwov', author: 'collocutor'},
+            {id: 3, message: "I am fine =)", avatar: 'https://bit.ly/3waIwov', author: 'me'},
+            {id: 4, message: "Nice ;)", avatar: 'https://bit.ly/3waIwov', author: 'collocutor'},
+            {id: 5, message: "Yo ;)", avatar: 'https://bit.ly/3waIwov', author: 'me'},
         ],
     },
-    sidebar: {},
+    sidebar: {
+        friends: [
+            {id: 1, name: "Dimych", avatar: 'https://bit.ly/3waIwov'},
+            {id: 2, name: "Slava", avatar: 'https://bit.ly/3waIwov'},
+            {id: 3, name: "Andrey", avatar: 'https://bit.ly/3waIwov'},
+            {id: 4, name: "Sasha", avatar: 'https://bit.ly/3waIwov'},
+            {id: 5, name: "Dima", avatar: 'https://bit.ly/3waIwov'},
+        ]
+    },
 }
 
 export default state;

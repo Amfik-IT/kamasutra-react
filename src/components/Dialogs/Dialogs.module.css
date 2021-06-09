@@ -10,40 +10,7 @@
     border-right: solid 1px #cdc2c2;
 }
 
-
-.dialogsItems .active {
-    border: solid 1px #983c4c;
-}
-
-.dialog {
-    margin: 10px 0;
-    padding-right: 10px;
-    border-radius: 5px;
-}
-
-.dialog a{
-    color: #cdc2c2;
-    display: inline-block;
-    width: 100%;
-    padding: 5px 0 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.dialog:hover {
-    background-color: #000;
-}
-
-
 .messages {
     padding: 10px;
     color: #cdc2c2;
-}
-
-.message {
-    margin: 10px 0;
-    padding: 5px 0 5px 10px;
-    border-radius: 5px;
-    color: #0cb3b3;
 }
