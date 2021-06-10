@@ -1,7 +1,9 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    padding: 10px 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .dialogsItems {
@@ -13,4 +15,12 @@
 .messages {
     padding: 10px;
     color: #cdc2c2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages>div:first-child {
+    flex-grow: 10;
 }

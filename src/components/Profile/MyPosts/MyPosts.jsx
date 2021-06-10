@@ -16,12 +16,12 @@ const MyPosts = (props) => {
     return (
       <div className={s.postBlock}>
           <h3>My post</h3>
-          <div>
-              <div>
-                  <textarea ref={newPostElement}>Текст поста</textarea>
+          <div className={s.new_post}>
+              <div className={s.textarea}>
+                  <textarea ref={newPostElement} placeholder="Новый пост"></textarea>
               </div>
-              <div>
-                  <button onClick={ addPost }>Add post</button>
+              <div className={s.button}>
+                  <button onClick={ addPost }>Send</button>
               </div>
           </div>
           <div className={s.posts}>

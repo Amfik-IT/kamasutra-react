@@ -1,18 +1,11 @@
-.postBlock {
-    padding: 10px;
-}
-
-.postBlock h3 {
-    color: #cdc2c2;
-}
-
-.posts {
-    transform: translate(0);
-    margin-top: 10px;
-}
-
-.new_post {
+.content {
+    position: relative;
     padding: 0 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .textarea textarea{
