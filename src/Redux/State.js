@@ -40,6 +40,7 @@ export let addPost = (postMessage) => {
         likeCount: 0,
         likeIcon: "&#9829;",
     };
+
     state.profilePage.posts.push(newPost);
 }
 
