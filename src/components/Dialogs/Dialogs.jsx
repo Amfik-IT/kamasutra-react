@@ -17,10 +17,8 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 <div>{messagesElements}</div>
-                <AddMessage addMessage={props.addMessage}
-                            updateNewMessageText={props.updateNewMessageText}
+                <AddMessage dispatch={props.dispatch}
                             newMessagesText={props.dialogsPage.newMessagesText}
-                            // appStore={props.appStore}
                 />
             </div>
         </div>
