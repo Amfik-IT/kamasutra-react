@@ -87,7 +87,7 @@
 // export default state;
 
 let store = {
-    _subscriber() {
+    _callSubscriber() {
         console.log('No subscribers (observers)')
     },
 
@@ -135,7 +135,7 @@ let store = {
     // LISTENER STATE
 
     subscribe(observer) {
-        this._subscriber = observer;
+        this._callSubscriber = observer;
     },
 
     // ADD POST
@@ -149,12 +149,12 @@ let store = {
         };
         this._state.profilePage.posts.push(newPost);
         this._state.profilePage.newPostText = '';
-        this._subscriber();
+        this._callSubscriber(this._state);
     },
 
     updateNewPostText(newText) {
         this._state.profilePage.newPostText = newText;
-        this._subscriber();
+        this._callSubscriber(this._state);
     },
 
     // ADD MESSAGE
@@ -169,12 +169,12 @@ let store = {
         // debugger
         this._state.dialogsPage.messages.push(newMessage);
         this._state.dialogsPage.newMessagesText = '';
-        this._subscriber();
+        this._callSubscriber(this._state);
     },
 
     updateNewMessageText(newMessage) {
         this._state.dialogsPage.newMessagesText = newMessage;
-        this._subscriber();
+        this._callSubscriber(this._state);
     },
 }
 
