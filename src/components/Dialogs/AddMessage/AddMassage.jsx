@@ -6,12 +6,12 @@ const AddMessage = (props) => {
     let newMessageElement = React.createRef();
 
     let addMessage = () => {
-        props.addMessage();
+        props.appStore.addMessage();
     }
 
     let onPostChange = () => {
         let text = newMessageElement.current.value;
-        props.updateNewMessageText(text);
+        props.appStore.updateNewMessageText(text);
     }
 
     return (
