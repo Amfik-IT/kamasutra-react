@@ -24,6 +24,7 @@ let state = {
             {id: 4, message: "Nice ;)", avatar: 'https://bit.ly/3waIwov', author: 'collocutor'},
             {id: 5, message: "Yo ;)", avatar: 'https://bit.ly/3waIwov', author: 'me'},
         ],
+        newMessagesText: 'Новое сообщение',
     },
     sidebar: {
         friends: [
@@ -36,6 +37,7 @@ let state = {
     },
 }
 
+// ADD POST
 export let addPost = () => {
     let newPost = {
         id: 5,
@@ -50,6 +52,26 @@ export let addPost = () => {
 
 export let updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
+    renderEntireTree(state);
+}
+
+// ADD MESSAGE
+
+export let addMessage = () => {
+    let newMessage = {
+        id: 5,
+        message: state.dialogsPage.newMessagesText,
+        avatar: 'https://bit.ly/3waIwov',
+        author: 'me',
+    };
+    // debugger
+    state.dialogsPage.messages.push(newMessage);
+    state.dialogsPage.newMessagesText = '';
+    renderEntireTree(state);
+}
+
+export let updateNewMessageText = (newMessage) => {
+    state.dialogsPage.newMessagesText = newMessage;
     renderEntireTree(state);
 }
 

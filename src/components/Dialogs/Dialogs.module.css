@@ -23,4 +23,7 @@
 
 .messages>div:first-child {
     flex-grow: 10;
+    overflow: scroll;
+    overflow-x:hidden;
+    height: 500px;
 }
