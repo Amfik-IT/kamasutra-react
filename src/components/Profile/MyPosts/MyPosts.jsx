@@ -1,20 +1,22 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Redux/State";
 
 const MyPosts = (props) => {
 
     let postsElement = props.posts.map(p => <Post message={p.message} likeCount={p.likeCount} likeIcon="&#9829;"/>)
 
-    let newPostElement = React.createRef();
+    let newPostElement = React.createRef(); // ссылка на textarea что быее можно было находить и пользоваться
 
     let addPost = () => {
-        props.dispatch({type: 'ADD-POST'});
+        props.dispatch(addPostActionCreator()); // передаем action сразу не помещая в переменную
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text}; // можно и так а как в функции чуть выше
+        // let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text}; // можно вынести action отдельно или так как в функции чуть выше
+        let action = updateNewPostTextActionCreator(text);
         props.dispatch(action);
     }
 

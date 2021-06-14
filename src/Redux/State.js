@@ -1,3 +1,6 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
 let store = {
     _callSubscriber() {
         console.log('No subscribers (observers)')
@@ -52,7 +55,7 @@ let store = {
 
     // ALL METHODS
     dispatch(action) { // { type: 'ADD-POST'}
-        if (action.type === 'ADD-POST') {
+        if (action.type === ADD_POST) {
 
             let newPost = {
                 id: 5,
@@ -64,7 +67,7 @@ let store = {
             this._state.profilePage.newPostText = '';
             this._callSubscriber(this._state);
 
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
 
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
@@ -90,5 +93,9 @@ let store = {
         }
     },
 }
+
+export const addPostActionCreator = () => ({type: ADD_POST})
+export const updateNewPostTextActionCreator = (text) =>
+    ({type: UPDATE_NEW_POST_TEXT, newText: text,})
 
 export default store;
