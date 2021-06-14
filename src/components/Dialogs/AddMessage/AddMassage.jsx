@@ -1,23 +1,25 @@
 import React from 'react';
 import s from './AddMessage.module.css'
+import {addMassageActionCreator, updateNewMessageTextActionCreator} from "../../../Redux/State";
 
 const AddMessage = (props) => {
 
-    let newMessageElement = React.createRef();
+    // let newMessageElement = React.createRef();
 
     let addMessage = () => {
-        props.dispatch({type: 'ADD-MESSAGE'});
+        props.dispatch(addMassageActionCreator());
     }
 
-    let onPostChange = () => {
-        let text = newMessageElement.current.value;
-        props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newMessage: text});
+    let onPostChange = (e) => {
+       let text = e.target.value
+        // let text = newMessageElement.current.value;
+        props.dispatch(updateNewMessageTextActionCreator(text));
     }
 
     return (
         <div className={s.content}>
             <div className={s.textarea}>
-                <textarea ref={newMessageElement} onChange={onPostChange} value={props.newMessagesText}/>
+                <textarea onChange={onPostChange} value={props.newMessagesText}/>
             </div>
             <div className={s.button}>
                 <button onClick={ addMessage }>Send</button>
