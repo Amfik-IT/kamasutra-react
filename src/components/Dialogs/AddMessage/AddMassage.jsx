@@ -4,15 +4,12 @@ import {addMassageActionCreator, updateNewMessageTextActionCreator} from "../../
 
 const AddMessage = (props) => {
 
-    // let newMessageElement = React.createRef();
-
     let addMessage = () => {
         props.dispatch(addMassageActionCreator());
     }
 
     let onPostChange = (e) => {
-       let text = e.target.value
-        // let text = newMessageElement.current.value;
+       let text = e.target.value;
         props.dispatch(updateNewMessageTextActionCreator(text));
     }
 
