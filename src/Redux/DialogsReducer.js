@@ -1,5 +1,3 @@
-import SidebarReducer from "./SidebarReducer";
-
 const ADD_MESSAGE = 'ADD-MESSAGE';
 const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
@@ -25,24 +23,26 @@ let initialState = {
 const DialogsReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case ADD_MESSAGE: {
+        case ADD_MESSAGE:
+            let maxId = Math.max(...state.messages.map(i => i.id));
             let newMessage = {
-                id: 5,
+                id: maxId + 1,
                 message: state.newMessagesText,
                 avatar: 'https://bit.ly/3waIwov',
                 author: 'me',
             };
-            let stateCopy = {...state};
-            stateCopy.messages = [...state.messages];
-            stateCopy.messages.push(newMessage);
-            stateCopy.newMessagesText = '';
-            return stateCopy;
-        }
-        case UPDATE_NEW_MESSAGE_TEXT: {
-            let stateCopy = {...state};
-            stateCopy.newMessagesText = action.newMessage;
-            return stateCopy;
-        }
+            return {
+                ...state,
+                newMessagesText: '',
+                messages: [...state.messages, newMessage]
+            };
+
+        case UPDATE_NEW_MESSAGE_TEXT:
+            return {
+                ...state,
+                newMessagesText: action.newMessage
+            };
+
         default:
             return state;
     }

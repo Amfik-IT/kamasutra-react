@@ -4,7 +4,7 @@ import s from './Header.module.css';
 const Header = () => {
     return (
         <header className={s.header}>
-            <img src='https://api.freelogodesign.org/assets/thumb/logo/14929696_400.png'/>
+            <img alt="My Company" src='https://api.freelogodesign.org/assets/thumb/logo/14929696_400.png'/>
         </header>
     );
 }
