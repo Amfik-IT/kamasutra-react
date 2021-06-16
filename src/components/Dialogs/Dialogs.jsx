@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Dialogs.module.css'
 import DialogItem from "./DialogItem/DialogsItem";
 import Message from "./Message/Massage";
-// import AddMessage from "./AddMessage/AddMassage";
 
 
 const Dialogs = (props) => {
@@ -26,9 +25,6 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 <div>{messagesElements}</div>
-                {/*<AddMessage dispatch={props.store.dispatch}*/}
-                {/*            newMessagesText={state.newMessagesText}*/}
-                {/*/>*/}
                 <div className={s.content}>
                     <div className={s.textarea}>
                         <textarea onChange={onMessageChange} value={props.dialogsPage.newMessagesText}/>

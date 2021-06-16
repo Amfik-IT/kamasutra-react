@@ -1,0 +1,52 @@
+.ava div img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    padding: 30px 50px;
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*align-items: stretch;*/
+}
+
+.ava {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.ava button {
+    min-width: 80px;
+    color: #afafaf;
+    background-color: #00000087;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #b1b1b1;
+    transition-duration: 0.4s;
+}
+
+.ava button:hover {
+    box-shadow: 1px 1px 5px #983c4c;
+    color:#ca4d61;
+}
+
+
+.description {
+    padding: 0px 20px;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #cdc2c2;
+    border-radius: 10px;
+    border: solid 1px #983c4c;
+}
+
+.description div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
