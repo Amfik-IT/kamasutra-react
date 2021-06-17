@@ -28,6 +28,10 @@
     transition-duration: 0.4s;
 }
 
+.ava button.follow {
+    color: #1c7d1c;
+}
+
 .ava button:hover {
     box-shadow: 1px 1px 5px #983c4c;
     color:#ca4d61;
